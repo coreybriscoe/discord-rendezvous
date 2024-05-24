@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "API for creating conventional commands in TypeScript Discord bots",
   "exports": {
-    "./rendezvousCommand": "./src/rendezvousCommand.js"
+    "./rendezvous/*": "./src/rendezvous/*.ts",
+    "./buttons/CustomButton": "./src/buttons/architecture/CustomButton.ts",
+    "./client": "./src/client.ts",
+    "./validation": "./src/validation/validation.ts"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
