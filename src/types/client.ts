@@ -1,5 +1,5 @@
 import { Client, Collection, GatewayIntentBits } from 'discord.js';
-import { RendezvousSlashCommand } from '../command/rendezvousCommand.js';
+import { RendezvousSlashCommand } from '../rendezvous/rendezvousCommand.js';
 import { OutcomeTypeConstraint } from './outcome.js';
 import CustomButton from '../buttons/architecture/CustomButton.js';
 
@@ -20,16 +20,19 @@ export class RendezvousClient extends Client {
     private static instance: RendezvousClient;
     private commands: Collection<string, RdvsSlashCommandAlias>;
     private buttons: Collection<string, CustomButton>;
+    private static intents: GatewayIntentBits[];
 
     private constructor() {
-        const intents = [GatewayIntentBits.Guilds];
-        // if (!config.featureFlags.privacyMode) intents.push(GatewayIntentBits.MessageContent);
         super({
-            intents,
+            intents: RendezvousClient.intents,
         });
         this.commands = new Collection();
         this.buttons = new Collection();
         RendezvousClient.instance = this;
+    }
+
+    public static addIntents(intents: GatewayIntentBits[]): void {
+        RendezvousClient.intents = RendezvousClient.intents.concat(intents);
     }
 
     public addCommands(commands: SlashCommandCollectionPair[]): void {
