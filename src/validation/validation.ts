@@ -1,6 +1,6 @@
 import { LimitedCommandInteraction, LimitedCommandInteractionOption } from '../rendezvous/limitedCommandInteraction.js';
 import { ValueOf } from '../types/typelogic.js';
-import { OptionValidationError, OptionValidationErrorStatus } from '../rendezvous/customError.js';
+import { OptionValidationError, OptionValidationErrorStatus } from '../rendezvous/optionValidationError.js';
 import { ApplicationCommandOptionType } from 'discord.js';
 
 export type Constraint<T> = {

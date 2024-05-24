@@ -1,4 +1,4 @@
-import { OptionValidationErrorStatus } from './customError.js';
+import { OptionValidationErrorStatus } from './optionValidationError.js';
 import { OutcomeStatus, Outcome, SlashCommandDescribedOutcome, OutcomeWithMonoBody, OutcomeWithDuoBody, OptionValidationErrorOutcome } from './outcome.js';
 
 export const defaultSlashCommandDescriptions = new Map<OutcomeStatus, (o: Outcome<string>) => SlashCommandDescribedOutcome>([
