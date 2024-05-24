@@ -1,7 +1,7 @@
 import { Client, Collection, GatewayIntentBits } from 'discord.js';
-import { RendezvousSlashCommand } from '../rendezvous/rendezvousCommand.js';
-import { OutcomeTypeConstraint } from './outcome.js';
-import CustomButton from '../buttons/architecture/CustomButton.js';
+import { RendezvousSlashCommand } from './rendezvous/rendezvousCommand.js';
+import { OutcomeTypeConstraint } from './rendezvous/outcome.js';
+import CustomButton from './buttons/architecture/CustomButton.js';
 
 // Type alias for RendezvousSlashCommand with unknown generic parameters.
 type RdvsSlashCommandAlias = RendezvousSlashCommand<OutcomeTypeConstraint, unknown, unknown>;

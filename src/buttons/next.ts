@@ -1,7 +1,7 @@
 import { ButtonBuilder, ButtonInteraction, ButtonStyle } from 'discord.js';
 import CustomButton from './architecture/CustomButton.js';
-import { isEmbedDescribedOutcome } from '../types/outcome.js';
-import { InteractionCacheServiceLocator } from '../types/interactionCacheServiceLocator.js';
+import { isEmbedDescribedOutcome } from '../rendezvous/outcome.js';
+import { InteractionCacheServiceLocator } from '../caching/interactionCacheServiceLocator.js';
 
 const nextButton = new CustomButton(
     new ButtonBuilder()

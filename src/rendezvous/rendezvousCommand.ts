@@ -1,8 +1,8 @@
 import { CommandInteraction, ContextMenuCommandBuilder, InteractionResponse, Message, SlashCommandBuilder } from 'discord.js';
-import { DescriptionMap, OptionValidationErrorOutcome, Outcome, OutcomeStatus, OutcomeTypeConstraint, PaginatedOutcome, SlashCommandDescribedOutcome, SlashCommandEmbedDescribedOutcome, isEmbedDescribedOutcome, isPaginatedOutcome, isValidationErrorOutcome } from '../types/outcome.js';
-import { LimitedCommandInteraction, limitCommandInteraction } from '../types/limitedCommandInteraction.js';
-import { defaultSlashCommandDescriptions } from '../types/defaultSlashCommandDescriptions.js';
-import { CachedCommandInteraction } from '../types/cachedInteraction.js';
+import { DescriptionMap, OptionValidationErrorOutcome, Outcome, OutcomeStatus, OutcomeTypeConstraint, PaginatedOutcome, SlashCommandDescribedOutcome, SlashCommandEmbedDescribedOutcome, isEmbedDescribedOutcome, isPaginatedOutcome, isValidationErrorOutcome } from './outcome.js';
+import { LimitedCommandInteraction, limitCommandInteraction } from './limitedCommandInteraction.js';
+import { defaultSlashCommandDescriptions } from './defaultSlashCommandDescriptions.js';
+import { CachedCommandInteraction } from '../caching/cachedInteraction.js';
 
 export interface RendezvousCommand<O extends OutcomeTypeConstraint, S, T1> {
     readonly interfacer: SlashCommandBuilder | ContextMenuCommandBuilder | undefined;
