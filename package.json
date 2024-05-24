@@ -1,0 +1,39 @@
+{
+  "name": "discord-rendezvous",
+  "version": "0.1.0",
+  "description": "API for creating conventional commands in TypeScript Discord bots",
+  "exports": {
+    "./rendezvousCommand": "./src/rendezvousCommand.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coreybriscoe/discord-rendezvous.git"
+  },
+  "keywords": [
+    "discord.js",
+    "discordjs",
+    "discord",
+    "command"
+  ],
+  "author": "Corey Briscoe (coreybriscoe)",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/coreybriscoe/discord-rendezvous/issues"
+  },
+  "homepage": "https://github.com/coreybriscoe/discord-rendezvous#readme",
+  "dependencies": {
+    "@types/node": "^20.12.12",
+    "discord.js": "^14.15.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.10.0",
+    "@typescript-eslint/parser": "^7.10.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
+  }
+}

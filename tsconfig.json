@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "ES2022",
+        "rootDir": "./src/",
+        "outDir": "./dist/",
+        "strict": true,
+        "allowJs": true,
+        "moduleResolution": "node",
+        "importHelpers": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "forceConsistentCasingInFileNames": true,
+        "removeComments": true,
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "sourceMap": false,
+        "baseUrl": "./"
+    },
+    "ts-node": {
+        "esm": true,
+        "compilerOptions": {
+            "module": "ES2022",
+            "target": "ES2022"
+        }
+    },
+    "files": [
+        "src/index.ts"
+    ],
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "test",
+    ],
+}
