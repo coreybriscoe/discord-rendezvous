@@ -39,19 +39,19 @@
   },
   "homepage": "https://github.com/coreybriscoe/discord-rendezvous#readme",
   "dependencies": {
-    "@types/node": "^20.12.12",
-    "discord.js": "^14.15.2",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.4.5"
+    "discord.js": "^14.15.2"
   },
   "devDependencies": {
     "@types/chai": "^4.3.16",
     "@types/mocha": "^10.0.6",
+    "@types/node": "^20.12.12",
     "@typescript-eslint/eslint-plugin": "^7.10.0",
     "@typescript-eslint/parser": "^7.10.0",
     "chai": "^5.1.1",
     "eslint": "^8.57.0",
     "mocha": "^10.4.0",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   }
 }
