@@ -2,11 +2,18 @@
   "name": "discord-rendezvous",
   "version": "0.1.0",
   "description": "API for creating conventional commands in TypeScript Discord bots",
+  "main": "./src/index.js",
   "exports": {
-    "./rendezvous/*": "./src/rendezvous/*.ts",
-    "./buttons/CustomButton": "./src/buttons/architecture/CustomButton.ts",
-    "./client": "./src/client.ts",
-    "./validation": "./src/validation/validation.ts"
+    ".": {
+      "import": {
+        "types": "./src/index.d.ts",
+        "default": "./src/index.js"
+      },
+      "require": {
+        "types": "./src/index.d.ts",
+        "default": "./src/index.js"
+      }
+    }
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
