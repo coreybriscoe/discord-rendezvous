@@ -5,7 +5,7 @@ import { InteractionCacheServiceLocator } from '../caching/interactionCacheServi
 
 const previousButton = new CustomButton(
     new ButtonBuilder()
-        .setCustomId('previous')
+        .setCustomId('rendezvous-navigation-previous')
         .setLabel('◀️ Previous')
         .setStyle(ButtonStyle.Primary),
     async (interaction: ButtonInteraction) => {

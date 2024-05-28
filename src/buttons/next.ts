@@ -5,7 +5,7 @@ import { InteractionCacheServiceLocator } from '../caching/interactionCacheServi
 
 const nextButton = new CustomButton(
     new ButtonBuilder()
-        .setCustomId('next')
+        .setCustomId('rendezvous-navigation-next')
         .setLabel('Next ▶️')
         .setStyle(ButtonStyle.Primary),
     async (interaction: ButtonInteraction) => {
