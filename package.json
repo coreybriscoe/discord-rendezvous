@@ -23,6 +23,7 @@
     "url": "git+https://github.com/coreybriscoe/discord-rendezvous.git"
   },
   "type": "module",
+  "files": ["dist"],
   "keywords": [
     "discord.js",
     "discordjs",
