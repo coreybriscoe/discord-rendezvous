@@ -22,11 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/coreybriscoe/discord-rendezvous.git"
   },
+  "type": "module",
   "keywords": [
     "discord.js",
     "discordjs",
     "discord",
-    "command"
+    "rendezvous"
   ],
   "author": "Corey Briscoe (coreybriscoe)",
   "license": "SEE LICENSE IN LICENSE",
