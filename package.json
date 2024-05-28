@@ -1,6 +1,6 @@
 {
   "name": "discord-rendezvous",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "API for creating conventional commands in TypeScript Discord bots",
   "main": "./dist/index.js",
   "exports": {
