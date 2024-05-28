@@ -28,7 +28,7 @@
     "rendezvous"
   ],
   "author": "Corey Briscoe (coreybriscoe)",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "AGPL-3.0-only",
   "bugs": {
     "url": "https://github.com/coreybriscoe/discord-rendezvous/issues"
   },
