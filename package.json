@@ -2,16 +2,16 @@
   "name": "discord-rendezvous",
   "version": "0.3.0",
   "description": "API for creating conventional commands in TypeScript Discord bots",
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
   "exports": {
     ".": {
       "import": {
-        "types": "./src/index.d.ts",
-        "default": "./src/index.js"
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
       },
       "require": {
-        "types": "./src/index.d.ts",
-        "default": "./src/index.js"
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
       }
     }
   },
