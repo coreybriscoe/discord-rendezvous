@@ -20,7 +20,8 @@
             "node_modules/@types"
         ],
         "sourceMap": false,
-        "baseUrl": "./"
+        "baseUrl": "./",
+        "declaration": true
     },
     "ts-node": {
         "esm": true,
