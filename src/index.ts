@@ -13,3 +13,4 @@ import nextButton from './buttons/next.js';
 export { nextButton };
 import previousButton from './buttons/previous.js';
 export { previousButton };
+export { PaginatedSolverParams } from './caching/paginatedSolverParams.js';
