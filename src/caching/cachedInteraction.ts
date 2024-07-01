@@ -1,7 +1,7 @@
 import { Snowflake } from 'discord.js';
 import { SlashCommandDescribedOutcome, SlashCommandEmbedDescribedOutcome, OutcomeTypeConstraint } from '../rendezvous/outcome.js';
 import { PaginatedSolverParams } from './paginatedSolverParams.js';
-import { InteractionCacheServiceLocator } from './interactionCacheServiceLocator.js';
+import { InteractionCacheServiceLocator } from './InteractionCacheServiceLocator.js';
 import { RendezvousCommand } from '../rendezvous/rendezvousCommand.js';
 
 export interface CachedInteraction {
