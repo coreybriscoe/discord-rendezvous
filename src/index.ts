@@ -14,3 +14,5 @@ export { nextButton };
 import previousButton from './buttons/previous.js';
 export { previousButton };
 export { PaginatedSolverParams } from './caching/paginatedSolverParams.js';
+export { InteractionCacheServiceLocator } from './caching/InteractionCacheServiceLocator.js';
+export { InteractionCacheService } from './caching/InteractionCacheService.js';
