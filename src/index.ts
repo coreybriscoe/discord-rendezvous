@@ -16,3 +16,5 @@ export { previousButton };
 export { PaginatedSolverParams } from './caching/paginatedSolverParams.js';
 export { InteractionCacheServiceLocator } from './caching/InteractionCacheServiceLocator.js';
 export { InteractionCacheService } from './caching/InteractionCacheService.js';
+import CustomButton from './buttons/architecture/CustomButton.js';
+export { CustomButton };
