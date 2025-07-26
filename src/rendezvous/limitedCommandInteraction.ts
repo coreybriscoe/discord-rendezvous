@@ -1,19 +1,16 @@
 import { Snowflake, CommandInteraction, InteractionType, Message, MessageContextMenuCommandInteraction, PermissionsBitField, ApplicationCommandOptionType } from 'discord.js';
 
-export type LimitedUser = {
+type Identifiable = {
     id: Snowflake;
 };
 
-export type LimitedChannel = {
-    id: Snowflake;
-};
+export type LimitedUser = Identifiable;
 
-export type LimitedRole = {
-    id: Snowflake;
-};
+export type LimitedChannel = Identifiable;
 
-export type LimitedGuildMember = {
-    id: Snowflake;
+export type LimitedRole = Identifiable;
+
+export type LimitedGuildMember = Identifiable & {
     permissions: Readonly<PermissionsBitField>;
     user: LimitedUser;
 };
@@ -27,8 +24,7 @@ export type LimitedCommandInteractionOption = {
     role?: LimitedRole | null;
 };
 
-export type LimitedCommandInteraction = {
-    id: Snowflake;
+export type LimitedCommandInteraction = Identifiable & {
     commandId: Snowflake;
     guildId: Snowflake | null;
     member: LimitedGuildMember,
