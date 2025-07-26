@@ -16,6 +16,7 @@ export type LimitedGuildMember = Identifiable & {
 };
 
 export type LimitedAttachment = Identifiable & {
+    name: string;
     url: string;
 };
 
