@@ -15,6 +15,10 @@ export type LimitedGuildMember = Identifiable & {
     user: LimitedUser;
 };
 
+export type LimitedAttachment = Identifiable & {
+    url: string;
+};
+
 export type LimitedCommandInteractionOption = {
     name: string;
     type: ApplicationCommandOptionType;
@@ -22,6 +26,7 @@ export type LimitedCommandInteractionOption = {
     user?: LimitedUser;
     channel?: LimitedChannel | null;
     role?: LimitedRole | null;
+    attachment?: LimitedAttachment;
 };
 
 export type LimitedCommandInteraction = Identifiable & {
