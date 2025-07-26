@@ -60,6 +60,8 @@ export const validateConstraints = async (interaction: LimitedCommandInteraction
             optionValue = option.role!.id;
         } else if (option.type === ApplicationCommandOptionType.String || option.type === ApplicationCommandOptionType.Integer || option.type === ApplicationCommandOptionType.Number || option.type === ApplicationCommandOptionType.Boolean) {
             optionValue = option.value;
+        } else if (option.type === ApplicationCommandOptionType.Attachment) {
+            optionValue = option.attachment;
         } else {
             throw new Error(`Error in validation.ts: option ${option.name} does not match a supported option type.`);
         }
