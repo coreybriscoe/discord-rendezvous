@@ -1,5 +1,5 @@
 import { InteractionCacheService } from './InteractionCacheService.js';
-import { InMemoryInteractionCacheService } from './inMemoryInteractionCacheService.js';
+import { InMemoryInteractionCacheService } from './InMemoryInteractionCacheService.js';
 
 export class InteractionCacheServiceLocator {
     private static service: InteractionCacheService;
